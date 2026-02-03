@@ -1,0 +1,16 @@
+.btn{
+    color: yellow;
+    background-color: green;
+    border-radius: 12px;
+}
+.texto1{
+    font-size: 50px;
+    color: brown;
+}
+.texto2{
+    font-size: 25px;
+    color: purple;
+}
+.fondo{
+    background-color: lightblue;
+}
