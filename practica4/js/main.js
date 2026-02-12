@@ -1,0 +1,1 @@
+alert("Cargado desde el main.js");
