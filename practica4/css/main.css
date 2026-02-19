@@ -1,3 +1,9 @@
 .bg-main-purple {
-    background-color: #6a0dad;
+    background-color: #9f1ddb;
 }
+a.navbar-brand {
+    color: white;
+}
+a.nav-link.py-3.px-0.px-lg-3.rounded {
+    color: white;
+}   
