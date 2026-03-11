@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RecetaOnline</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-main-navbar text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">RecetaOnline</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold btn-menu rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#recetario"><i
+                                class="bi bi-cup-hot-fill text-black"></i> Recetario</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"><i
+                                class="bi bi-telephone-fill text-black"></i> Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+    <header id="inicio" class="masthead">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1>RecetaOnline</h1>
+                        <span class="subheading">Tu recetario tapatío de confianza</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- body-->
+    <main>
+        <section class="py-5" id="recetario">
+            <div class="container">
+                <h2 class="text-center text-uppercase mb-5">Recetas Típicas de Jalisco</h2>
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Receta 1: Torta Ahogada -->
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="./assets/img/torta.jpg" class="rounded shadow-sm recipe-img"
+                                    alt="Torta Ahogada">
+                                <h3 class="mt-4">Torta Ahogada</h3>
+                                <p class="text-muted w-75 w-md-50">El platillo más icónico de Guadalajara. Elaborada con
+                                    birote salado, rellena de carnitas y bañada en una deliciosa salsa de chile de árbol
+                                    y
+                                    jitomate.</p>
+                                <a href="https://www.directoalpaladar.com.mx/cocina-popular-mexicana/tortas-ahogadas-guadalajara-receta-tradicional-facil"
+                                    class="btn btn-menu mt-3">Receta</a>
+                            </div>
+                        </div>
+                        <!-- Receta 2: Birria -->
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="./assets/img/birria.jpg" class="rounded shadow-sm recipe-img" alt="Birria">
+                                <h3 class="mt-4">Birria</h3>
+                                <p class="text-muted w-75 w-md-50">Tradicional platillo a base de carne de chivo o res,
+                                    marinada en un rico adobo de chiles y especias, horneada lentamente.</p>
+                                <a href="https://peopleenespanol.com/recetas/10988-birria-de-chivo-estilo-jalisco/"
+                                    class="btn btn-menu mt-3">Receta</a>
+                            </div>
+                        </div>
+                        <!-- Receta 3: Carne en su Jugo -->
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="./assets/img/carne.jpg" class="rounded shadow-sm recipe-img"
+                                    alt="Carne en su Jugo">
+                                <h3 class="mt-4">Carne en su Jugo</h3>
+                                <p class="text-muted w-75 w-md-50">Un guiso reconfortante de pequeños trozos de carne de
+                                    res
+                                    cocinados en su propio jugo con tocino, frijoles de la olla y cebolla asada.</p>
+                                <a href="https://www.kiwilimon.com/receta/platos-fuertes/mexicanos/carne-de-res-en-su-jugo-estilo-jalisco"
+                                    class="btn btn-menu mt-3">Receta</a>
+                            </div>
+                        </div>
+                        <!-- Receta 4: Jericalla -->
+                        <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="./assets/img/jericalla.jpg" class="rounded shadow-sm recipe-img"
+                                    alt="Jericalla">
+                                <h3 class="mt-4">Jericalla</h3>
+                                <p class="text-muted w-75 w-md-50">Postre tradicional tapatío, una mezcla entre flan y
+                                    natilla con un característico y delicioso toque tostado en la parte superior.</p>
+                                <a href="https://comedera.com/como-hacer-jericallas/"
+                                    class="btn btn-menu mt-3">Receta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3 shadow"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark rounded-circle p-3 shadow"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contacto -->
+    <footer id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>RecetaOnline</h4>
+                    <p>Tu recetario tapatío de confianza con las mejores recetas de Jalisco.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Contacto</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope-fill"></i> Email: <a href="mailto:info@recetaonline.com"
+                                class="text-white text-decoration-none">info@recetaonline.com</a></li>
+                        <li><i class="bi bi-telephone-fill"></i> Teléfono: +52 (33) 1234-5678</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Guadalajara, Jalisco, México</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2026 RecetaOnline. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
